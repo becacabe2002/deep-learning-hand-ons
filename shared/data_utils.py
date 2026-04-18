@@ -32,7 +32,7 @@ class NumpyDataLoader:
     def __len__(self):
         return (self.n_samples + self.batch_size - 1) // self.batch_size
     
-def get_swiss_roll_2d(n_samples=1000, noise=0.1):
+def get_swiss_roll_2d(n_samples=1000, noise=0.1) -> np.ndarray:
     """
     Generate a 2D Swiss Roll dataset using sklearn's make_swiss_roll function.
     The Swiss Roll is a popular synthetic dataset used for testing dimensionality reduction techniques.
@@ -73,7 +73,7 @@ def load_mnist_numpy(n_samples=None, flatten=False):
 
     return (train_images, train_labels), (test_images, test_labels)
 
-def load_mnist_pytorch(batch_size=64, train=True, n_samples=None, root='./data'):
+def load_mnist_pytorch(batch_size=64, train=True, n_samples=None, root='./data') -> DataLoader:
     """
     Loads MNIST dataset using PyTorch's torchvision, then normalized to range [0, 1]"""
     transform = tv.transforms.Compose([
@@ -87,7 +87,7 @@ def load_mnist_pytorch(batch_size=64, train=True, n_samples=None, root='./data')
 
     return DataLoader(dataset, batch_size=batch_size, shuffle=train)
 
-def download_tiny_shakespeare(root='./data'):
+def download_tiny_shakespeare(root='./data')->str:
     """
     Downloads the Tiny Shakespeare dataset, a small text corpus often used for character-level language modeling tasks.
     The dataset contains the complete works of William Shakespeare, making it a rich source of text for training and testing language models.
@@ -105,7 +105,7 @@ def download_tiny_shakespeare(root='./data'):
         print(f"Tiny Shakespeare dataset already exists at {file_path}.")
     return file_path
 
-def load_tiny_shakespeare(root='./data'):
+def load_tiny_shakespeare(root='./data')->str:
     """
     Loads the Tiny Shakespeare dataset from the specified root directory.
     If the dataset is not already present, it will be downloaded first.
