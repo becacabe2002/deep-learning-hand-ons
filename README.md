@@ -7,9 +7,9 @@ Structured repository containing hands-on implementations of deep learning model
 ## Implementation Roadmap
 
 ### 1. Infrastructure & Shared Utilities
-- [ ] Configure `pyproject.toml` and run `uv sync` to install dependencies
-- [ ] Create and parameterize the `Makefile` for generic training commands
-- [ ] Implement `shared/optimizers.py` (SGD, Momentum, Adam for NumPy)
+- [x] Configure `pyproject.toml` and run `uv sync` to install dependencies
+- [x] Create and parameterize the `Makefile` for generic training commands
+- [x] Implement `shared/optimizers.py` (SGD, Momentum, Adam for NumPy)
 - [ ] Implement `shared/data_utils.py` (Data loaders for MNIST, Tiny Shakespeare, etc.)
 
 ### 2. NumPy from Scratch (Fundamental Math)
