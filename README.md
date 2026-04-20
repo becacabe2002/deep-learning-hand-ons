@@ -13,16 +13,16 @@ Structured repository containing hands-on implementations of deep learning model
 - [x] Implement `shared/data_utils.py` (Data loaders for MNIST, Tiny Shakespeare, etc.)
 
 ### 2. NumPy from Scratch (Fundamental Math)
-- [x] `00_gradient_checking`: Numerical gradient checking (finite differences)
-- [ ] `01_linear_nn`: Linear and Logistic Regression
-- [ ] `02_mlp`: Multi-Layer Perceptrons / Feedforward Networks
+- [x] `gradient_checking`: Numerical gradient checking (finite differences)
+- [ ] `linear_nn`: Linear and Logistic Regression
+- [ ] `mlp`: Multi-Layer Perceptrons / Feedforward Networks
 
 ### 3. Modern Frameworks (PyTorch)
-- [ ] `01_cnn_foundations`: Modern CNNs (ResNet blocks, spatial pooling)
-- [ ] `02_rnn_foundations`: Sequence modeling (GRUs/LSTMs)
-- [ ] `03_vision_transformer`: ViT from scratch
-- [ ] `04_diffusion`: Minimal DDPM (2D Swiss Roll & MNIST)
-- [ ] `05_micro_gpt`: Causal language modeling (Tiny Shakespeare, RoPE, KV-caching)
+- [ ] `cnn_foundations`: Modern CNNs (ResNet blocks, spatial pooling)
+- [ ] `rnn_foundations`: Sequence modeling (GRUs/LSTMs)
+- [ ] `vision_transformer`: ViT from scratch
+- [ ] `diffusion`: Minimal DDPM (2D Swiss Roll & MNIST)
+- [ ] `micro_gpt`: Causal language modeling (Tiny Shakespeare, RoPE, KV-caching)
 
 ## Usage
 
