@@ -17,6 +17,7 @@ def mse_loss_grad(y_pred: np.ndarray, y_true: np.ndarray) -> np.ndarray:
 def binary_cross_entropy_loss(y_pred: np.ndarray, y_true: np.ndarray) -> float:
     """
     Cost function for binary classification problems, penalizes the model for incorrect predictions.
+    binary_cross_entropy_loss = -1/N * sum(y_true * log(y_pred) + (1 - y_true) * log(1 - y_pred))
     """
     y_pred = np.clip(y_pred, 1e-15, 1 - 1e-15)  # Avoid log(0) by clipping predictions
     return -np.mean(y_true * np.log(y_pred) + (1 - y_true) * np.log(1 - y_pred))

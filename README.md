@@ -14,8 +14,8 @@ Structured repository containing hands-on implementations of deep learning model
 
 ### 2. NumPy from Scratch (Fundamental Math)
 - [x] `gradient_checking`: Numerical gradient checking (finite differences)
-- [ ] `linear_nn`: Linear and Logistic Regression
-- [ ] `mlp`: Multi-Layer Perceptrons / Feedforward Networks
+- [x] `linear_nn`: Linear and Logistic Regression
+- [x] `mlp`: Multi-Layer Perceptrons / Feedforward Networks
 
 ### 3. Modern Frameworks (PyTorch)
 - [ ] `cnn_foundations`: Modern CNNs (ResNet blocks, spatial pooling)
